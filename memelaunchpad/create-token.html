@@ -1,0 +1,496 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create a Token - MEME LAUNCHPAD</title>
+  <link rel="canonical" href="create-token.html">
+  <link rel="license" href="llms.txt">
+  <meta name="copyright" content="(c) 2026 MEME LAUNCHPAD. Original work. Not licensed for reproduction - see https://memebooster.io/llms.txt">
+  <link rel="icon" href="favicon.90cffe6c8643.ico%40v%3D3" sizes="32x32">
+  <link rel="icon" href="favicon.f3976409e687.svg%40v%3D3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.05379a6776e5.png%40v%3D3">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#06030f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="../css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.6849e642943a-1.css?v=4">
+  <link rel="stylesheet" href="css/restyle.9b180af48ef9-1.css?v=16">
+  <script>
+
+    function reveal() { document.documentElement.classList.add("is-booted"); }
+    addEventListener("app:ready", reveal, { once: true });
+    addEventListener("load", reveal, { once: true });
+  </script>
+  <noscript><style>#boot { display: none; }</style></noscript>
+</head>
+<body>
+
+  <div id="boot">
+    <span class="boot-mark"><svg><use href="#i-flip"></use></svg></span>
+    <span class="boot-text">MEME LAUNCHPAD // Solana Mainnet</span>
+    <span class="boot-track"><span class="boot-fill"></span></span>
+  </div>
+
+  <svg class="sprite" aria-hidden="true">
+    <symbol id="i-spark" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" fill="currentColor" stroke="none"></path></symbol>
+
+    <symbol id="i-flip" viewbox="0 0 16 16"><path d="M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-6.5 7.5a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l6.5-7.5a.75.75 0 0 1 .897-.182" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></symbol>
+    <symbol id="i-check" viewbox="0 0 24 24"><path d="m20 6-11 11-5-5"></path></symbol>
+    <symbol id="i-upload" viewbox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m17 8-5-5-5 5"></path><path d="M12 3v12"></path></symbol>
+    <symbol id="i-alert" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7.5v5"></path><path d="M12 16.5h.01"></path></symbol>
+
+    <symbol id="i-rocket" viewbox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.3-2 5-2 5s3.7-.5 5-2c.7-.8.7-2.1-.1-2.9a2.2 2.2 0 0 0-2.9-.1zM12 15l-3-3a22 22 0 0 1 2-4A12.9 12.9 0 0 1 22 2c0 2.7-.8 7.5-6 11a22.4 22.4 0 0 1-4 2z"></path><path d="M9 12H4s.6-3 2-4c1.6-1.1 5 0 5 0M12 15v5s3-.6 4-2c1.1-1.6 0-5 0-5"></path></symbol>
+    <symbol id="i-dice" viewbox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="4"></rect><path d="M8.5 8.5h.01"></path><path d="M15.5 15.5h.01"></path><path d="M12 12h.01"></path></symbol>
+    <symbol id="i-crown" viewbox="0 0 24 24"><path d="m3 7 4.5 5L12 5l4.5 7L21 7l-2 12H5z"></path></symbol>
+    <symbol id="i-medal" viewbox="0 0 24 24"><circle cx="12" cy="15" r="6"></circle><path d="M8.2 10.2 5 3h4l3 6M15.8 10.2 19 3h-4l-3 6"></path></symbol>
+    <symbol id="i-chart" viewbox="0 0 24 24"><path d="M3 3v18h18"></path><path d="m7 15 4-4 3 3 5-6"></path></symbol>
+    <symbol id="i-chev-d" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></symbol>
+    <symbol id="i-x" viewbox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"></path></symbol>
+    <symbol id="i-arrow-right" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></symbol>
+
+    <symbol id="i-arrow-ne" viewbox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M8.4 7H17v8.6"></path></symbol>
+    <symbol id="i-arrow-left" viewbox="0 0 24 24"><path d="M19 12H5"></path><path d="m12 19-7-7 7-7"></path></symbol>
+    <symbol id="i-droplet" viewbox="0 0 24 24"><path d="M12 2.7 6.3 8.4a8 8 0 1 0 11.4 0L12 2.7Z"></path></symbol>
+    <symbol id="i-copy" viewbox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.2"></rect><path d="M15 6.5A2.5 2.5 0 0 0 12.5 4H6.5A2.5 2.5 0 0 0 4 6.5v6A2.5 2.5 0 0 0 6.5 15"></path></symbol>
+    <symbol id="i-bot" viewbox="0 0 24 24"><rect x="3.5" y="8" width="17" height="12" rx="3.5"></rect><path d="M12 8V5"></path><circle cx="12" cy="3.4" r="1.4"></circle><path d="M8.8 13h.01"></path><path d="M15.2 13h.01"></path><path d="M9.5 16.6h5"></path></symbol>
+    <symbol id="i-share" viewbox="0 0 24 24"><circle cx="18" cy="5" r="2.6"></circle><circle cx="6" cy="12" r="2.6"></circle><circle cx="18" cy="19" r="2.6"></circle><path d="m8.3 10.8 7.4-4.3"></path><path d="m8.3 13.2 7.4 4.3"></path></symbol>
+  </svg>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand" aria-label="MEME LAUNCHPAD home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-flip"></use></svg></span>
+        <span class="brand-word">MEME<span>LAUNCHPAD</span></span>
+      </a>
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="siteNav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="create-token.html" class="active">Create Token</a></li>
+        <li><a href="liquidity.html">Liquidity</a></li>
+        <li><a href="articles/index.htm">Articles</a></li>
+        <li><a href="index.html#how">How it works</a></li>
+        <li><a href="index.html#features">Features</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Create a new token</h1>
+    </div>
+
+    <div class="forge-layout">
+
+      <div class="panel preview-panel pv-bar">
+        <div class="pv-logo" id="pvLogo">?</div>
+        <div class="pv-id">
+          <div class="pv-name placeholder" id="pvName">Your token</div>
+          <div class="pv-symbol" id="pvSymbol">SYMBOL</div>
+        </div>
+        <div class="pv-supply-row">
+          <span>Supply</span>
+          <span class="pv-supply" id="pvSupply">-</span>
+        </div>
+        <div class="pv-badges" id="pvBadges"></div>
+      </div>
+
+      <div class="wizard">
+
+        <nav class="step-nav" aria-label="Token creation steps">
+          <ol class="step-list">
+            <li class="step-item is-active" data-step="1">
+              <button type="button" class="step-btn" aria-current="step">
+                <span class="step-marker">
+                  <span class="step-index">1</span>
+                  <svg class="icon step-tick"><use href="#i-check"></use></svg>
+                </span>
+                <span class="step-label">
+                  <span class="step-name">Token basics</span>
+                  <span class="step-hint">Name, symbol, supply</span>
+                </span>
+              </button>
+              <span class="step-line" aria-hidden="true"></span>
+            </li>
+            <li class="step-item" data-step="2">
+              <button type="button" class="step-btn">
+                <span class="step-marker">
+                  <span class="step-index">2</span>
+                  <svg class="icon step-tick"><use href="#i-check"></use></svg>
+                </span>
+                <span class="step-label">
+                  <span class="step-name">Advanced settings</span>
+                  <span class="step-hint">Liquidity, bot, socials</span>
+                </span>
+              </button>
+              <span class="step-line" aria-hidden="true"></span>
+            </li>
+            <li class="step-item" data-step="3">
+              <button type="button" class="step-btn">
+                <span class="step-marker">
+                  <span class="step-index">3</span>
+                  <svg class="icon step-tick"><use href="#i-check"></use></svg>
+                </span>
+                <span class="step-label">
+                  <span class="step-name">Review &amp; create</span>
+                  <span class="step-hint">Confirm and create</span>
+                </span>
+              </button>
+            </li>
+          </ol>
+        </nav>
+
+        <form id="forgeForm" novalidate="">
+
+          <section class="step-pane is-active" data-pane="1" aria-label="Token basics">
+            <div class="panel">
+              <div class="panel-head">
+                <div>
+                  <h2>Token basics</h2>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm" id="prefillBtn">
+                  <svg class="icon"><use href="#i-dice"></use></svg> AI Prefill
+                </button>
+              </div>
+
+              <div class="panel-inset">
+                <div class="basics-top">
+                  <div class="field logo-field">
+                    <label>Logo <span class="req">*</span></label>
+                    <div class="dropzone" id="dropzone" title="Click or drop an image">
+                      <input type="file" id="logoInput" accept="image/png,image/jpeg,image/webp" hidden="">
+                      <span id="dropzoneText">
+                        <svg class="icon"><use href="#i-upload"></use></svg>
+                        <span class="dz-hint">PNG or JPG<br>1000×1000</span>
+                      </span>
+                    </div>
+                  </div>
+                  <div class="field-stack">
+                    <div class="field">
+                      <label for="tokenName">Token name <span class="req">*</span></label>
+                      <input type="text" id="tokenName" maxlength="32" placeholder="e.g. Ember Coin" required="">
+                      <span class="hint">Max 32 characters</span>
+                    </div>
+                    <div class="field">
+                      <label for="tokenSymbol">Symbol <span class="req">*</span></label>
+                      <input type="text" id="tokenSymbol" maxlength="10" placeholder="e.g. EMBR" class="upper" required="">
+                      <span class="hint">Max 10 characters</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-grid basics-numbers">
+                  <div class="field">
+                    <label for="decimalsBtn" id="decimalsLabel">Decimals <span class="req">*</span></label>
+                    <div class="select" id="decimalsSelect">
+                      <input type="hidden" id="tokenDecimals" value="9">
+                      <button type="button" class="select-btn" id="decimalsBtn" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="decimalsLabel">
+                        <span id="decimalsValue">9</span>
+                        <svg class="icon select-caret"><use href="#i-chev-d"></use></svg>
+                      </button>
+                      <ul class="select-menu" id="decimalsMenu" role="listbox" aria-labelledby="decimalsLabel" tabindex="-1" hidden="">
+                        <li role="option" data-value="6" aria-selected="false">6<svg class="icon select-tick"><use href="#i-check"></use></svg></li>
+                        <li role="option" data-value="9" aria-selected="true">9<svg class="icon select-tick"><use href="#i-check"></use></svg></li>
+                      </ul>
+                    </div>
+                    <span class="hint">Select token decimals</span>
+                  </div>
+                  <div class="field">
+                    <label for="tokenSupply">Total supply <span class="req">*</span></label>
+                    <input type="text" inputmode="numeric" id="tokenSupply" value="1,000,000,000" data-grouped="" required="">
+                    <span class="hint">100% goes to the pool</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="step-actions end">
+              <button type="button" class="btn btn-primary" data-goto="2">
+                Continue <svg class="icon"><use href="#i-arrow-right"></use></svg>
+              </button>
+            </div>
+          </section>
+
+          <section class="step-pane" data-pane="2" aria-label="Advanced settings">
+            <div class="panel">
+              <h2>Advanced settings</h2>
+
+              <div class="adv-stack">
+
+                <div class="adv-module is-lit">
+                  <div class="adv-head">
+                    <span class="adv-icon"><svg class="icon"><use href="#i-droplet"></use></svg></span>
+                    <div class="adv-title">
+                      <h3>Add initial liquidity</h3>
+                      <p>Create a liquidity pool on Raydium instantly.</p>
+                    </div>
+                    <span class="adv-tag">Required</span>
+                  </div>
+                  <div class="adv-body">
+                    <p class="adv-note">Choose how much SOL to seed the pool with (minimum 1 SOL).</p>
+                    <div class="preset-row">
+                      <button type="button" class="preset" data-liq="1">1 SOL</button>
+                      <button type="button" class="preset" data-liq="2">2 SOL</button>
+                      <button type="button" class="preset is-on" data-liq="5">5 SOL</button>
+                      <button type="button" class="preset" data-liq="10">10 SOL</button>
+                      <button type="button" class="preset" data-liq="25">25 SOL</button>
+                      <div class="preset-custom">
+                        <input type="text" inputmode="decimal" id="liqCustom" data-decimals="1" placeholder="Custom" aria-label="Custom liquidity in SOL">
+                        <span class="preset-unit">SOL</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="adv-module">
+                  <div class="adv-head">
+                    <span class="adv-icon"><svg class="icon"><use href="#i-bot"></use></svg></span>
+                    <div class="adv-title">
+                      <h3>Volume bot</h3>
+                      <p>Generates buy/sell orders from random wallets to attract other investors.</p>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" class="adv-toggle" id="optMarketMaker">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="adv-body">
+                    <div class="form-grid">
+                      <div class="field full" role="group" aria-labelledby="mmVolLabel">
+                        <div class="field-label">
+                          <label id="mmVolLabel">Total bot volume</label>
+                          <span class="tip" tabindex="0" role="note" aria-label="The total SOL the bot buys and sells with, spread across the wallets.">
+                            <span class="tip-i" aria-hidden="true">i</span>
+                            <span class="tip-pop" aria-hidden="true">The total SOL the bot buys and sells with, spread across the wallets.</span>
+                          </span>
+                        </div>
+                        <div class="vc vc-meterc" id="mmMeter">
+                          <div class="vc-row">
+                            <div><div class="vc-big sm"><span class="vc-num" data-mm-f="amount">5</span><span class="vc-unit">SOL</span></div></div>
+                            <div class="vc-side"><span class="vc-band" data-mm-f="band" aria-live="polite">Heavy</span></div>
+                          </div>
+                          <div class="vc-meter-wrap" aria-hidden="true">
+                            <div class="vc-meter"><span class="vc-meter-fill"></span><span class="vc-meter-pin"></span></div>
+                            <div class="vc-ticks"><span style="left:0%"><b>Light</b>1 SOL</span><span style="left:21.53%"><b>Standard</b>2 SOL</span><span style="left:50%"><b>Heavy</b>5 SOL</span><span style="left:71.53%"><b>Intense</b>10 SOL</span><span style="left:100%"><b>Maximum</b>25 SOL</span></div>
+                          </div>
+                          <p class="vc-note" data-mm-f="note"></p>
+                        </div>
+                        <div class="preset-row">
+                          <button type="button" class="preset" data-mm-volume="1">1 SOL</button>
+                          <button type="button" class="preset" data-mm-volume="2">2 SOL</button>
+                          <button type="button" class="preset is-on" data-mm-volume="5">5 SOL</button>
+                          <button type="button" class="preset" data-mm-volume="10">10 SOL</button>
+                          <button type="button" class="preset" data-mm-volume="25">25 SOL</button>
+                          <div class="preset-custom">
+                            <input type="text" inputmode="decimal" id="mmVolumeCustom" data-decimals="1" placeholder="Custom" aria-label="Custom bot volume in SOL">
+                            <span class="preset-unit">SOL</span>
+                          </div>
+                        </div>
+                        <input type="hidden" id="mmVolume" value="5">
+                      </div>
+                      <input type="hidden" id="mmMakers" value="100">
+
+                      <div class="field full">
+                        <div class="field-label">
+                          <label for="mmOrderMin">Order amounts (SOL)</label>
+                          <span class="tip" tabindex="0" role="note" aria-label="Select the amount of SOL each maker will be buying/selling to make it look more organic.">
+                            <span class="tip-i" aria-hidden="true">i</span>
+                            <span class="tip-pop" aria-hidden="true">Select the amount of SOL each maker will be buying/selling to make it look more organic.</span>
+                          </span>
+                        </div>
+                        <div class="pair-row">
+                          <div class="pair">
+                            <input type="text" inputmode="decimal" id="mmOrderMin" value="0.001">
+                            <span class="hint">Min amount</span>
+                          </div>
+                          <div class="pair">
+                            <input type="text" inputmode="decimal" id="mmOrderMax" value="0.002" aria-label="Maximum order amount">
+                            <span class="hint">Max amount</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="field full">
+                        <div class="field-label">
+                          <label for="mmDelayMin">Delay between buy transactions (seconds)</label>
+                          <span class="tip" tabindex="0" role="note" aria-label="Select a time frame between each buy transaction to make it look more organic.">
+                            <span class="tip-i" aria-hidden="true">i</span>
+                            <span class="tip-pop" aria-hidden="true">Select a time frame between each buy transaction to make it look more organic.</span>
+                          </span>
+                        </div>
+                        <div class="pair-row">
+                          <div class="pair">
+                            <input type="text" inputmode="numeric" id="mmDelayMin" value="10">
+                            <span class="hint">Min delay</span>
+                          </div>
+                          <div class="pair">
+                            <input type="text" inputmode="numeric" id="mmDelayMax" value="20" aria-label="Maximum delay">
+                            <span class="hint">Max delay</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="adv-module">
+                  <div class="adv-head">
+                    <span class="adv-icon"><svg class="icon"><use href="#i-share"></use></svg></span>
+                    <div class="adv-title">
+                      <h3>Social links</h3>
+                      <p>Embed your project's links into the token metadata.</p>
+                    </div>
+                    <label class="switch">
+                      <input type="checkbox" class="adv-toggle" id="optSocials">
+                      <span class="slider"></span>
+                    </label>
+                  </div>
+                  <div class="adv-body">
+                    <div class="social-row">
+                      <div class="field">
+                        <label for="linkTwitter">X / Twitter</label>
+                        <input type="url" id="linkTwitter" placeholder="https://x.com/yourtoken">
+                      </div>
+                      <div class="field">
+                        <label for="linkTelegram">Telegram</label>
+                        <input type="url" id="linkTelegram" placeholder="https://t.me/yourtoken">
+                      </div>
+                      <div class="field">
+                        <label for="linkWebsite">Website</label>
+                        <input type="url" id="linkWebsite" placeholder="https://yourtoken.xyz">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-goto="1">
+                <svg class="icon"><use href="#i-arrow-left"></use></svg> Back
+              </button>
+              <button type="button" class="btn btn-primary" data-goto="3">
+                Continue <svg class="icon"><use href="#i-arrow-right"></use></svg>
+              </button>
+            </div>
+          </section>
+
+          <section class="step-pane" data-pane="3" aria-label="Review">
+            <div class="panel">
+              <h2>Review</h2>
+
+              <div class="review-grid">
+                <div class="review-block">
+                  <div class="review-head">
+                    <h3>Token</h3>
+                    <button type="button" class="btn btn-ghost btn-sm" data-goto="1">Edit</button>
+                  </div>
+                  <ul class="review-list" id="reviewToken"></ul>
+                </div>
+
+                <div class="review-block">
+                  <div class="review-head">
+                    <h3>Cost</h3>
+                    <button type="button" class="btn btn-ghost btn-sm" data-goto="2">Edit</button>
+                  </div>
+                  <ul class="review-list" id="reviewCost"></ul>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="step-actions">
+              <button type="button" class="btn btn-ghost" data-goto="2">
+                <svg class="icon"><use href="#i-arrow-left"></use></svg> Back
+              </button>
+              <button type="button" class="btn btn-primary" id="launchBtn">
+                <svg class="icon"><use href="#i-spark"></use></svg>
+                <span>Create Token</span>
+              </button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="toast" id="toast"></div>
+
+  <div class="modal-overlay" id="payModal">
+    <div class="modal pay-modal">
+     <div id="payBody">
+
+      <div class="pay-qr" id="payQr">
+        <img src="img/sol-pay-qr.png?v=18" alt="Solana payment QR" width="196" height="196">
+      </div>
+
+      <div class="pay-field">
+        <span class="pay-label">Amount</span>
+        <div class="pay-box">
+          <span class="pay-amount-group">
+            <span class="pay-amount" id="payAmountValue">-</span>
+            <span class="pay-unit">SOL</span>
+          </span>
+          <button type="button" class="pay-copy" data-copy="amount">
+            <svg class="icon"><use href="#i-copy"></use></svg> Copy
+          </button>
+        </div>
+      </div>
+
+      <div class="pay-field">
+        <span class="pay-label">Receiving address</span>
+        <div class="pay-box">
+          <span class="pay-address" id="payAddress">E9CBWnxqNz1GEfR34Qhvqt4nYeJek5ke4JRNSDtE2AzW</span>
+          <button type="button" class="pay-copy" data-copy="address">
+            <svg class="icon"><use href="#i-copy"></use></svg> Copy
+          </button>
+        </div>
+      </div>
+
+      <div class="pay-verify">
+        <span class="pay-label">Payment check</span>
+        <p class="pay-verify-hint" id="payWatchHint">Watching the receive wallet for SOL sent in the last 10 minutes. Amount can be equal or higher than required.</p>
+        <div class="verify-row">
+          <input type="text" id="txInput" class="verify-input" spellcheck="false" autocomplete="off" placeholder="Optional: paste tx signature">
+          <button type="button" class="btn btn-primary verify-btn" id="txCheck">Check</button>
+        </div>
+        <p class="verify-status" id="verifyStatus" hidden=""></p>
+        <p class="verify-error" id="verifyError" role="alert" hidden=""></p>
+      </div>
+
+      <button class="btn btn-ghost btn-block mt-16" id="payDone">Close</button>
+     </div>
+
+     <div class="pay-launch" id="payLaunch" hidden="">
+       <div class="pay-launch-spinner" aria-hidden="true"></div>
+       <h3 id="launchTitle">Launching your token</h3>
+       <p class="modal-sub" id="launchSub">Confirming payment on Solana…</p>
+       <ul class="launch-steps" id="launchSteps"></ul>
+     </div>
+
+     <div class="pay-success" id="paySuccess" hidden="">
+       <span class="pay-success-mark"><svg class="icon"><use href="#i-check"></use></svg></span>
+       <h3>Token launched</h3>
+       <p class="modal-sub" id="successLine">Your token is live on Solana mainnet.</p>
+
+       <ul class="pay-breakdown" id="successFacts"></ul>
+
+       <a class="btn btn-primary btn-block mt-16" id="successExplorer" href="#" target="_blank" rel="noopener">
+         <svg class="icon"><use href="#i-arrow-ne"></use></svg>
+         <span>View on Solscan</span>
+       </a>
+       <a class="btn btn-ghost btn-block mt-16" href="liquidity.html">
+         <svg class="icon"><use href="#i-droplet"></use></svg>
+         <span>View liquidity</span>
+       </a>
+       <button type="button" class="btn btn-ghost btn-block mt-16" id="successClose">Close</button>
+     </div>
+    </div>
+  </div>
+
+  <script type="module" src="js/forge.js?v=25"></script>
+</body>
+</html>
