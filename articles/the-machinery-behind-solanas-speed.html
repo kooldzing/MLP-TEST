@@ -1,0 +1,133 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Machinery Behind Solana&#x27;s Speed - MEME LAUNCHPAD</title>
+  <meta name="description" content="Proof of history, parallel execution and a block propagation trick borrowed from file sharing - plus the costs nobody advertises.">
+  <link rel="canonical" href="https://memebooster.io/articles/the-machinery-behind-solanas-speed">
+  <link rel="license" href="../llms.txt">
+  <meta name="copyright" content="(c) 2026 MEME LAUNCHPAD. Original work. Not licensed for reproduction - see https://memebooster.io/llms.txt">
+  <link rel="icon" href="../favicon.90cffe6c8643.ico%40v%3D3" sizes="32x32">
+  <link rel="icon" href="../favicon.f3976409e687.svg%40v%3D3" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.05379a6776e5.png%40v%3D3">
+  <link rel="manifest" href="../site.webmanifest">
+  <meta name="theme-color" content="#06030f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="../../css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.6849e642943a.css">
+  <link rel="stylesheet" href="../css/restyle.9b180af48ef9-3.css?v=12">
+  <script>
+
+    function reveal() { document.documentElement.classList.add("is-booted"); }
+    addEventListener("app:ready", reveal, { once: true });
+    addEventListener("load", reveal, { once: true });
+  </script>
+  <noscript><style>#boot { display: none; }</style></noscript>
+</head>
+<body>
+
+  <div id="boot">
+    <span class="boot-mark"><svg><use href="#i-flip"></use></svg></span>
+    <span class="boot-text">MEME LAUNCHPAD // Solana Mainnet</span>
+    <span class="boot-track"><span class="boot-fill"></span></span>
+  </div>
+
+  <svg class="sprite" aria-hidden="true">
+
+    <symbol id="i-flip" viewbox="0 0 16 16"><path d="M9.58 1.077a.75.75 0 0 1 .405.82L9.165 6h4.085a.75.75 0 0 1 .567 1.241l-6.5 7.5a.75.75 0 0 1-1.302-.638L6.835 10H2.75a.75.75 0 0 1-.567-1.241l6.5-7.5a.75.75 0 0 1 .897-.182" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></symbol>
+    <symbol id="i-spark" viewbox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"></path></symbol>
+    <symbol id="i-arrow-right" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></symbol>
+    <symbol id="i-arrow-ne" viewbox="0 0 24 24"><path d="M7 17 17 7"></path><path d="M8.4 7H17v8.6"></path></symbol>
+    <symbol id="i-spark4" viewbox="0 0 24 24"><path d="M12 0Q13.1 10.9 24 12 13.1 13.1 12 24 10.9 13.1 0 12 10.9 10.9 12 0Z"></path></symbol>
+  </svg>
+
+  <div class="page-glow page-glow-short" aria-hidden="true">
+    <div class="glow-rings"></div>
+    <span class="sparkle" style="top:26%; left:4%;  width:22px; height:22px; --sd:0s"><svg><use href="#i-spark4"></use></svg></span>
+    <span class="sparkle" style="top:18%; right:7%; width:28px; height:28px; --sd:.9s"><svg><use href="#i-spark4"></use></svg></span>
+    <span class="sparkle" style="bottom:18%;right:3%;width:15px; height:15px; --sd:1.7s"><svg><use href="#i-spark4"></use></svg></span>
+  </div>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="../index.html" class="brand" aria-label="MEME LAUNCHPAD home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-flip"></use></svg></span>
+        <span class="brand-word">MEME<span>LAUNCHPAD</span></span>
+      </a>
+            <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="siteNav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../create-token.html">Create Token</a></li>
+        <li><a href="../liquidity.html">Liquidity</a></li>
+        <li><a href="the-machinery-behind-solanas-speed.html" class="active">Articles</a></li>
+        <li><a href="../index.html#how">How it works</a></li>
+        <li><a href="../index.html#features">Features</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <section class="article-hero">
+      <div class="container">
+        <a class="article-back" href="the-machinery-behind-solanas-speed.html"><svg class="icon"><use href="#i-arrow-right"></use></svg> All articles</a>
+        <span class="article-cat">Solana</span>
+        <h1 class="article-title">The Machinery Behind Solana&#x27;s Speed</h1>
+        <p class="article-dek">Proof of history, parallel execution and a block propagation trick borrowed from file sharing - plus the costs nobody advertises.</p>
+        <p class="article-meta">26 Aug 2026 <i class="dot"></i> 6 min read</p>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="article-cover">
+        <img src="../img/articles/the-machinery-behind-solanas-speed.38aaad7882fe.svg" alt="" width="800" height="460">
+      </div>
+    </section>
+
+    <section class="container">
+      <article class="prose">
+        <p>Every blockchain has the same awkward job. A few thousand computers that do not know or trust each other have to agree, over and over, on a single ordered list of what happened. Almost all of the engineering in this field is really about the word ordered.</p>
+        <p>Solana&#x27;s answer is unusual because it refuses to treat that as one problem. Ordering, agreement, distribution and execution are pulled apart and each is given its own mechanism. Looked at as a single system it seems like a magic trick. Looked at as four separate machines it is fairly easy to follow.</p>
+        <h2>A clock nobody can fake</h2>
+        <p>Proof of History is the part everyone has heard of and almost nobody describes correctly. It is not a consensus mechanism. It is a clock.</p>
+        <p>The idea is simple to the point of feeling like a cheat. Take a hash function and feed its output back into itself, endlessly. Because each hash depends on the one before it, the sequence cannot be computed in parallel and cannot be skipped ahead. If someone shows you a long run of those hashes, they have shown you that a certain amount of real computation, and therefore real time, has passed. Transactions get stamped into that sequence as it is produced, so the order of events is recorded inside the data structure rather than negotiated afterwards.</p>
+        <p>In a conventional design, validators exchange messages to agree on what came first, with rounds and timeouts and all the latency that implies. Here the current leader generates the sequence and everyone else verifies it, and verification splits across cores even though generation cannot. Consensus still sits on top, a stake-weighted voting protocol in the Byzantine fault tolerant tradition, but it argues about which fork to follow rather than about what time it is.</p>
+        <blockquote class="pull">Proof of History is not consensus. It is a clock that no participant can lie about, which turns out to be most of the argument.</blockquote>
+        <h2>Say what you intend to touch</h2>
+        <p>The second mechanism is execution. On most chains, transactions run one at a time because the network cannot know in advance which pieces of state a transaction will read or write. That is discovered only as the code executes, so running two side by side risks both quietly editing the same thing.</p>
+        <p>Solana requires every transaction to declare its accounts up front, and to mark which of them it intends to write to. This is why Solana transactions look verbose compared with their equivalents elsewhere. The payoff is that the scheduler can inspect a batch, see which transactions overlap and which do not, and hand the non-overlapping ones to different processor cores at the same time. Two people trading unrelated assets have no reason to queue behind each other, so they do not.</p>
+        <div class="callout">Declaring accounts in advance is also what makes local fee markets possible. Congestion around one very popular account can be priced on its own instead of taxing everything else happening that second.</div>
+        <h2>Getting the block to everyone</h2>
+        <p>A fast block is useless if it cannot reach the network in time. Three further pieces address that.</p>
+        <ul>
+          <li>Turbine breaks a block into small pieces and sends each piece to a different subset of validators, who relay onward in a tree. The structure is closer to file sharing than to broadcasting, and it means the leader&#x27;s outbound bandwidth does not have to grow with the number of participants.</li>
+          <li>The leader schedule is known ahead of time, derived from stake, so clients can push transactions straight at the validator that is about to lead rather than into a large shared waiting room. There is no classic global mempool sitting between users and the block.</li>
+          <li>The validator itself is built as a pipeline. Fetching, signature verification, execution and commitment run as stages of an assembly line, in the same spirit as a processor pipeline, so no part of the hardware sits idle waiting for another.</li>
+        </ul>
+        <h2>The bill for all of this</h2>
+        <p>None of it is free, and the costs are structural rather than incidental. High throughput plus fast propagation means validators need serious hardware and serious bandwidth, which raises the floor on who can participate independently. Concentration of validators in a small number of hosting providers and regions is a live concern, and one the ecosystem argues about openly.</p>
+        <p>The network has also had periods of degraded performance and outright halts, generally caused by resource exhaustion when demand spiked in ways the fee mechanism did not absorb. Restarting after a halt requires operators to coordinate with each other, a useful reminder that the social layer is part of the system rather than an embarrassing footnote to it. Much of the work of recent years, on fee markets, transaction admission, stake-weighted quality of service and a second independent validator implementation, has been aimed at that class of failure. Whether it is solved is not something anyone can honestly claim, because the answer only appears under conditions nobody has scheduled.</p>
+        <p>One last piece of hygiene. Headline transactions per second figures deserve suspicion on every chain, and here in particular, because validators publish votes as ordinary transactions. Counting those inflates the number enormously without describing anything a user experiences. The interesting question was never how many rows fit in a ledger. It is whether a person doing something ordinary gets a confirmation before they lose interest, and how much of the design has to hold together for that to keep being true.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <span>&copy; 2026 MEME LAUNCHPAD.</span>
+      <div class="footer-links">
+        <a href="../create-token.html">Create Token</a>
+        <a href="../liquidity.html">Liquidity</a>
+        <a href="the-machinery-behind-solanas-speed.html">Articles</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast"></div>
+
+  <script type="module" src="../js/page.js"></script>
+</body>
+</html>

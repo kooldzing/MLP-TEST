@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" role="img" aria-hidden="true">
+  <defs>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="hsl(205 62% 17%)"/>
+      <stop offset="55%" stop-color="hsl(205 58% 10%)"/>
+      <stop offset="1" stop-color="hsl(191 55% 7%)"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="46%" r="52%">
+      <stop offset="0" stop-color="hsl(205 90% 62% / 0.55)"/>
+      <stop offset="1" stop-color="hsl(205 90% 62% / 0)"/>
+    </radialGradient>
+    <radialGradient id="gloss" cx="36%" cy="30%" r="72%">
+      <stop offset="0" stop-color="hsl(205 100% 92%)"/>
+      <stop offset="34%" stop-color="hsl(205 92% 66%)"/>
+      <stop offset="78%" stop-color="hsl(205 85% 40%)"/>
+      <stop offset="1" stop-color="hsl(197 80% 26%)"/>
+    </radialGradient>
+    <linearGradient id="band" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="hsl(185 90% 62% / 0)"/>
+      <stop offset="42%" stop-color="hsl(205 92% 68% / 0.95)"/>
+      <stop offset="1" stop-color="hsl(239 92% 72% / 0)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="460" fill="url(#wash)"/>
+  <g>
+    <circle cx="400" cy="212" r="150" fill="none" stroke="hsl(205 78% 60% / 0.16)" stroke-width="1.5"/>
+    <circle cx="400" cy="212" r="210" fill="none" stroke="hsl(205 78% 60% / 0.135)" stroke-width="1.5"/>
+    <circle cx="400" cy="212" r="272" fill="none" stroke="hsl(205 78% 60% / 0.11)" stroke-width="1.5"/>
+    <circle cx="400" cy="212" r="336" fill="none" stroke="hsl(205 78% 60% / 0.085)" stroke-width="1.5"/>
+  </g>
+  <rect width="800" height="460" fill="url(#halo)"/>
+  <line x1="-510" y1="460" x2="218" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="-380" y1="460" x2="244" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="-250" y1="460" x2="270" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="-120" y1="460" x2="296" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="10" y1="460" x2="322" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="140" y1="460" x2="348" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="270" y1="460" x2="374" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="400" y1="460" x2="400" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="530" y1="460" x2="426" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="660" y1="460" x2="452" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="790" y1="460" x2="478" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="920" y1="460" x2="504" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="1050" y1="460" x2="530" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="1180" y1="460" x2="556" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="1310" y1="460" x2="582" y2="238" stroke="hsl(205 88% 64% / 0.42)" stroke-width="1.6"/>
+  <line x1="0" y1="238.0" x2="800" y2="238.0" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="243.0" x2="800" y2="243.0" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="250.1" x2="800" y2="250.1" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="260.2" x2="800" y2="260.2" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="274.5" x2="800" y2="274.5" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="294.8" x2="800" y2="294.8" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="323.7" x2="800" y2="323.7" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="364.7" x2="800" y2="364.7" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <line x1="0" y1="422.9" x2="800" y2="422.9" stroke="hsl(205 88% 66% / 0.3)" stroke-width="1.4"/>
+  <circle cx="400" cy="238" r="76" fill="url(#gloss)" opacity="0.95"/>
+  <circle cx="400" cy="238" r="98" fill="none" stroke="#dfff26" stroke-width="2" opacity="0.55"/>
+  <path transform="translate(96 92) scale(1.083) translate(-12 -12)" fill="#fff" opacity="0.9" d="M12 0Q13.1 10.9 24 12 13.1 13.1 12 24 10.9 13.1 0 12 10.9 10.9 12 0Z"/>
+  <path transform="translate(712 128) scale(0.750) translate(-12 -12)" fill="#fff" opacity="0.75" d="M12 0Q13.1 10.9 24 12 13.1 13.1 12 24 10.9 13.1 0 12 10.9 10.9 12 0Z"/>
+  <path transform="translate(660 372) scale(1.250) translate(-12 -12)" fill="#fff" opacity="0.55" d="M12 0Q13.1 10.9 24 12 13.1 13.1 12 24 10.9 13.1 0 12 10.9 10.9 12 0Z"/>
+  <path transform="translate(150 350) scale(0.583) translate(-12 -12)" fill="#fff" opacity="0.6" d="M12 0Q13.1 10.9 24 12 13.1 13.1 12 24 10.9 13.1 0 12 10.9 10.9 12 0Z"/>
+</svg>
