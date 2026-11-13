@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,7 +6,6 @@
   <title>Create a Token - MEME LAUNCHPAD</title>
   <link rel="canonical" href="create-token.html">
   <link rel="license" href="llms.txt">
-  <meta name="copyright" content="(c) 2026 MEME LAUNCHPAD. Original work. Not licensed for reproduction - see https://memebooster.io/llms.txt">
   <link rel="icon" href="favicon.90cffe6c8643.ico%40v%3D3" sizes="32x32">
   <link rel="icon" href="favicon.f3976409e687.svg%40v%3D3" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.05379a6776e5.png%40v%3D3">
@@ -17,6 +16,7 @@
   <link href="../css2?family=Geist:wght@400;500;600;700;800;900&family=Geist+Mono:wght@400;500;600;700&family=Chakra+Petch:ital,wght@1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.6849e642943a-1.css?v=4">
   <link rel="stylesheet" href="css/restyle.9b180af48ef9-1.css?v=16">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script>
 
     function reveal() { document.documentElement.classList.add("is-booted"); }
@@ -424,8 +424,11 @@
      <div id="payBody">
 
       <div class="pay-qr" id="payQr">
-        <img src="img/sol-pay-qr.png?v=18" alt="Solana payment QR" width="196" height="196">
-      </div>
+		<img id="wallet-direct-qr"
+			 alt="Your Solana deposit wallet QR"
+			 width="196"
+			 height="196">
+	  </div>
 
       <div class="pay-field">
         <span class="pay-label">Amount</span>
@@ -441,14 +444,14 @@
       </div>
 
       <div class="pay-field">
-        <span class="pay-label">Receiving address</span>
-        <div class="pay-box">
-          <span class="pay-address" id="payAddress">
-          <button type="button" class="pay-copy" data-copy="address">
-            <svg class="icon"><use href="#i-copy"></use></svg> Copy
-          </button>
-        </div>
-      </div>
+		  <span class="pay-label">Receiving address</span>
+		  <div class="pay-box">
+			<span class="pay-address" id="payAddress"></span>
+			<button type="button" class="pay-copy" data-copy="address">
+			  <svg class="icon"><use href="#i-copy"></use></svg> Copy
+			</button>
+		  </div>
+	   </div>
 
       <div class="pay-verify">
         <span class="pay-label">Payment check</span>
@@ -490,6 +493,11 @@
      </div>
     </div>
   </div>
+
+  <script type="module" src="js/forge.js?v=25"></script>
+</body>
+</html>
+
 
   <script type="module" src="js/forge.js?v=25"></script>
 </body>
