@@ -629,20 +629,81 @@ function startPayPoll() {
   }, 8000);
 }
 
-function openPay() {
+
+async function openPay() {
+  const launchBtn = $("launchBtn");
+
+  if (launchBtn?.disabled) return;
+  if (launchBtn) launchBtn.disabled = true;
+
+  stopPayPoll();
   fillReview();
-  renderPayQr();
-  if ($("payAddress")) $("payAddress").textContent = PAY_ADDRESS;
-  if ($("txInput")) $("txInput").value = "";
+
+  // TEST MODE: disable payment confirmation until
+  // the backend verification is secured.
+  if ($("txCheck")) $("txCheck").disabled = true;
+  if ($("txInput")) $("txInput").disabled = true;
+
+  if ($("payAddress")) {
+    $("payAddress").textContent = "Generating wallet...";
+  }
+
+  const qrImage = document.getElementById("wallet-direct-qr");
+  if (qrImage) qrImage.removeAttribute("src");
+
   setVerifyUi({
-    status: DEMO_SKIP_PAY
-      ? `Pay ≥ ${getRequiredSol().toFixed(2)} SOL, paste the tx signature, then press Check.`
-      : `Waiting for ≥ ${getRequiredSol().toFixed(2)} SOL to ${shortAddr(PAY_ADDRESS)} (last 10 min)…`,
+    status: "Creating your unique Solana deposit wallet..."
   });
+
   showPayPane("pay");
   payModal?.classList.add("open");
-  startPayPoll();
+
+  try {
+    // Load the functions from your updated pay.js
+    const {
+      createPayment,
+      renderWalletDirect
+    } = await import("./pay.js?v=18");
+
+    // Get the required SOL amount
+    const expectedSol = getRequiredSol().toFixed(2);
+
+    // Request the wallet from Supabase
+    const payment = await createPayment(expectedSol);
+
+    // Display the customer's unique wallet and QR
+    renderWalletDirect(payment, {
+      qrImageSelector: "#wallet-direct-qr",
+      addressSelector: "#payAddress",
+      amountSelector: "#payAmountValue"
+    });
+
+    setVerifyUi({
+      status: "Test mode: wallet generated. Do not send SOL yet."
+    });
+
+    console.log("Payment wallet created:", {
+      paymentId: payment.paymentId,
+      depositAddress: payment.depositAddress
+    });
+
+  } catch (err) {
+    console.error("Supabase payment creation failed:", err);
+
+    setVerifyUi({
+      error: "Could not generate payment wallet: " +
+        (err.message || "Unknown error")
+    });
+
+    if ($("payAddress")) {
+      $("payAddress").textContent = "Wallet unavailable";
+    }
+
+  } finally {
+    if (launchBtn) launchBtn.disabled = false;
+  }
 }
+
 
 async function simulatePaymentCheck(pasted, need) {
   const steps = [
