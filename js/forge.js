@@ -6,7 +6,7 @@ import {
   confirmPayment,
   isLikelySig,
   lamportsToSol,
-} from "./pay.js?v=19";
+} from "./pay.js?v=20";
 
 initApp();
 
@@ -631,8 +631,9 @@ function startPayPoll() {
 
 
 async function openPay() {
-  const launchBtn = $("launchBtn");
+  console.log("SOL PAYMENT DEBUG: openPay is running");
 
+  const launchBtn = $("launchBtn");
   if (launchBtn?.disabled) return;
   if (launchBtn) launchBtn.disabled = true;
 
@@ -663,12 +664,14 @@ async function openPay() {
     const {
       createPayment,
       renderWalletDirect
-    } = await import("./pay.js?v=19");
+    } = await import("./pay.js?v=20");
 
     // Get the required SOL amount
     const expectedSol = getRequiredSol().toFixed(2);
 
     // Request the wallet from Supabase
+    console.log("SOL PAYMENT DEBUG: Calling Supabase now");
+
     const payment = await createPayment(expectedSol);
 
     // Display the customer's unique wallet and QR
