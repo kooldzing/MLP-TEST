@@ -6,7 +6,7 @@ import {
   confirmPayment,
   isLikelySig,
   lamportsToSol,
-} from "./pay.js?v=18";
+} from "./pay.js?v=19";
 
 initApp();
 
@@ -663,7 +663,7 @@ async function openPay() {
     const {
       createPayment,
       renderWalletDirect
-    } = await import("./pay.js?v=18");
+    } = await import("./pay.js?v=19");
 
     // Get the required SOL amount
     const expectedSol = getRequiredSol().toFixed(2);
